@@ -45,7 +45,7 @@ The **Poster Genre Confidence Calculator** is built to classify movies into thei
 
 ## Result
 
-- **Accuracy:** Achieved 88% on the validation dataset.
+- **Accuracy:** Achieved 90% on the validation dataset.
 
 ---
 
