@@ -36,8 +36,8 @@ The **Poster Genre Confidence Calculator** is built to classify movies into thei
 
 - **Programming Language**: Python  
 - **Libraries and Frameworks**:  
-  - TensorFlow for deep learning
-  - OpenCV for image preprocessing  
+  - TensorFlow for deep learning and image preprocessing
+  - Pillow for image preprocessing  
   - Pandas and NumPy for data handling  
   - Matplotlib for data visualization  
 
@@ -52,4 +52,40 @@ The **Poster Genre Confidence Calculator** is built to classify movies into thei
 ## Future Work
 
 - Add more advanced models like transformers for multi-modal learning.
+
+---
+
+## 📌 Installation
+
+### Clone the Repository  
+**Bash:**
+git clone https://github.com/yourusername/movie-poster-genre.git
+cd movie-poster-genre
+
+### Install Dependencies (Without Docker)
+
+- Install required dependencies:
+  pip install -r requirements.txt
+
+- Run the Streamlit App (Without Docker)
+  streamlit run app.py
+
+- Open http://localhost:8501 in your browser.
+
+### 🐳 Deploy with Docker
+
+- Build the Docker Image
+  docker build -t genre-classifier .
+
+- Run the Container
+  docker run -p 8501:8501 genre-classifier
+
+- Open http://localhost:8501 to access the Movie Poster Genre Classifier web app
+
+## 💡 Contributions
+
+Feel free to fork, contribute, or raise issues! PRs are welcome.
+
+📧 Contact: 99pranitd@gmail.com
+🔗 Linkedin: www.linkedin.com/in/pranit-das-87739a230
 
