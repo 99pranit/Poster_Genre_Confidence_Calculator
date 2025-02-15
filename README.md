@@ -12,7 +12,7 @@ The **Poster Genre Confidence Calculator** is built to classify movies into thei
 
 ## Dataset  
 
-- **Source**: [Kaggle IMDB Genre Dataset](https://www.kaggle.com)  
+- **Source**: (https://www.kaggle.com/code/krutarthhd/genre-prediction-from-the-movie-poster/input)
 - **Size**: Includes metadata for thousands of movies along with their posters and genre labels.  
 - **Key Features**:  
   - `Poster`: Movie poster images.  
@@ -59,25 +59,33 @@ The **Poster Genre Confidence Calculator** is built to classify movies into thei
 
 ### Clone the Repository  
 **Bash:**
-git clone https://github.com/yourusername/movie-poster-genre.git
-cd movie-poster-genre
+git clone https://github.com/99pranit/Poster_Genre_Confidence_Calculator.git   
+
+Note: The TensorFlow model was not uploaded due to memory constraints.
+
+Steps to Set Up:
+1. Download the dataset from [Kaggle](https://www.kaggle.com/code/krutarthhd/genre-prediction-from-the-movie-poster/input) and save it in Poster_Genre_Confidence_Calculator/notebook.
+2. Open uploaded final_modelling.ipynb.
+3. Copy and paste the model into Poster_Genre_Confidence_Calculator/genre_predict_app.
+     
+cd movie_poster_genre
 
 ### Install Dependencies (Without Docker)
 
-- Install required dependencies:
+- Install required dependencies:  
   pip install -r requirements.txt
 
-- Run the Streamlit App (Without Docker)
+- Run the Streamlit App (Without Docker):  
   streamlit run app.py
 
 - Open http://localhost:8501 in your browser.
 
 ### 🐳 Deploy with Docker
 
-- Build the Docker Image
+- Build the Docker Image:  
   docker build -t genre-classifier .
 
-- Run the Container
+- Run the Container:  
   docker run -p 8501:8501 genre-classifier
 
 - Open http://localhost:8501 to access the Movie Poster Genre Classifier web app
